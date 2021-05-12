@@ -11,7 +11,11 @@ body {
     color: #222;
     overflow-x: hidden;
 }
-
+h1 {
+    background-color: rgb(238, 76, 76);
+    width: fit-content;
+    color: white;
+}
 h4 {
     font-weight: lighter;
     color: rgb(66, 66, 66);
