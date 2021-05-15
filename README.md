@@ -14,4 +14,6 @@ DAY 4 : Hidden Search
 
 DAY 5 : Blurry Loading
 
+DAY 6 : Scroll Animation (show content when scroll)
+
 
