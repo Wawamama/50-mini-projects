@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    --usa-bg: rgba(224, 15, 15, 0.6);
+    --europe-bg: rgba(13, 49, 209, 0.7);
+    --usa-btn-color: rgba(224, 15, 15, 1);
+    --europe-btn-color: rgba(13, 49, 209, 1);
+    --bigger-width: 80%;
+    --smaller-width: 20%;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    white-space: nowrap;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    border: solid 1px white;
+    width:15rem;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.split.left {
+    position: absolute;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: url('https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2018/09/24/5ba92bf92197f95c2ebad804_GettyImages-1039233864.jpg.rend.hgtvcom.966.544.suffix/1573248929356.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.7s linear;
+    overflow: hidden;
+}
+
+.split.right {
+    position: absolute;
+    right:0;
+    width: 50%;
+    height: 100%;
+    background: url('https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_3.0,f_auto,g_center,h_393,q_auto,w_713/v1/pgatour/editorial/2020/07/08/europe-ryder-cup-847-andrewredington.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.7s linear;
+    overflow: hidden;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--usa-bg);
+}
+
+.split.right::before {
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--europe-bg);
+}
+
+
+
+
+
+.split.left .btn:hover {
+    background-color: var(--usa-btn-color);
+    border-color: var(--usa-btn-color);
+    transition: 0.3s ease;
+}
+
+.split.right .btn:hover {
+    background-color: var(--europe-btn-color);
+    border-color: var(--europe-btn-color);
+    transition: 0.3s ease;
+}
+
+.hover-left .left {
+    width: var(--bigger-width);
+}
+
+.hover-left .right {
+    width: var(--smaller-width);
+}
+
+.hover-right .left {
+    width: var(--smaller-width);
+}
+
+.hover-right .right {
+    width: var(--bigger-width);
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1.2rem;
+        width: 12rem;
+    }
+}
