@@ -16,4 +16,6 @@ DAY 5 : Blurry Loading
 
 DAY 6 : Scroll Animation (show content when scroll)
 
+DAY 7 : Split Landing Page
+
 
