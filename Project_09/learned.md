@@ -1,3 +1,6 @@
 # What I learned with this project
 
-Scroll Animations <3
+Methods to use on an AUDIO object in HTML5
+.play()
+.pause()
+.currentTime = 0 // reset to beginning
