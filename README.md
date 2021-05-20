@@ -20,3 +20,4 @@ DAY 7 : Split Landing Page
 
 DAY 8 : Form with wave effect
 
+DAY 9 : Sound Board
