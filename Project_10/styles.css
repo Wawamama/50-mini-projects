@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: rgba(96, 96, 245, 0.89);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
@@ -13,4 +14,45 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    padding: 10px;
+}
+
+#container {
+    background-color: white;
+    max-width: 100%;
+    width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#container h3 {
+    opacity: 0.7; 
+    color: rgb(18, 17, 61);
+}
+
+.btn { 
+    background-color: rgb(2, 144, 163);
+    outline: none;
+    border:0;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.joke {
+    font-size: 1.8rem;
+    margin: 2rem 0;
 }
