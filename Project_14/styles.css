@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulidisplay=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eafbff;
+    background-image: linear-gradient(to bottom,
+    #eafbff 0%,
+    #eafbff 50%,
+    #5290f9 50%,
+    #5290f9 100%
+    )
+}
+
+.nav {
+    width: 80px;
+    transition: width 0.6s linear;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav.active {
+    width: 350px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+.nav.active ul {
+    width: 100%;
+}
+
+.nav ul li {
+    opacity: 0;
+    transform: rotateY(0deg);
+    transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+.nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: rgb(11, 1, 99);
+    padding: 0;
+    margin: 0 10px;
+}
+
+.btn {
+    border:0;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+.btn .line {
+    background-color: #5290f9;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top:10px;
+    left: 0;
+}
+
+.btn .line.line2 {
+    top:auto;
+    bottom: 10px;
+    transition: transform 0.6s linear;
+}
+
+.nav.active .btn .line1 {
+    transform: rotate(-765deg) translateY(5px);
+}
+
+.nav.active .btn .line2 {
+    transform: rotate(765deg) translateY(-5px);
+}
