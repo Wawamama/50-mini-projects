@@ -29,3 +29,5 @@ DAY 11 : Event Keycodes
 DAY 12 : FAQ Collapse
 
 DAY 13 : Random Choice Picker
+
+DAY 14 : Animated Nav
