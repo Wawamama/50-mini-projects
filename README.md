@@ -31,3 +31,5 @@ DAY 12 : FAQ Collapse
 DAY 13 : Random Choice Picker
 
 DAY 14 : Animated Nav
+
+DAY 15 : Increment Counter
