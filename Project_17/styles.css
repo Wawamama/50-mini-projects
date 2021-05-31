@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-color: rgb(12, 8, 51);
+    --light-color: rgb(40, 33, 104);
+    --search-color: rgb(144, 136, 212);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color)
+}
+
+header {
+    background-color: var(--light-color);
+    height: 10vh;
+    position: absolute;
+    top:0;
+    width: 100vw;
+}
+
+.search {
+    position: fixed;
+    top:2vh;
+    right:15px;
+    background-color: transparent;
+    border: solid 2px var(--dark-color);
+    border-radius: 50px;
+    width: 200px;
+    max-width: 80vw;
+    height: 6vh;
+    color: var(--search-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: var(--search-color);
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15vh 30px;
+}
+
+.movie {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    height: 60vh;
+    max-height: 600px;
+    overflow: hidden;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-poster {
+    height: 90%;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1rem;
+}
+
+.movie-title {
+    color: var(--search-color);
+}
+
+.movie-text {
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: all 0.2s linear;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+
+}
+
+.movie-text h3 {
+    margin:20px 0;
+    color:var(--dark-color)
+}
+
+.movie-rating {
+    background-color: var(--dark-color);
+    padding: 7px;
+    color: var(--search-color);
+    border-radius: 5px;
+}
+
+.movie-title {
+    font-size: 1.5rem;
+}
+
+.movie.show .movie-text {
+    transform:translateY(0);
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color:orangered;
+}
