@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --almost-black: #111;
+}
+
+html {
+    transition: all 0.3s ease-in;
+}
+
+html.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+  
+
+html.dark {
+    background-color: var(--almost-black);
+    color: var(--primary-color);
+}
+
+.darkmode-toggle {
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:10vh 0;
+}
+
+.analog_clock-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.needle {
+    height: 95px;
+    width: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: all 1s linear;
+    border-radius: 3px 3px 0 0;
+}
+
+.needle.seconds {
+    transform: translate(-50%, -100%) rotate(60deg);
+    background-color: red;
+}
+
+.needle.hours {
+    height: 70px;
+    transform: translate(-50%, -100%)  rotate(30deg) ;
+}
+
+.needle.minutes {
+    transform: translate(-50%, -100%)  rotate(90deg) ;
+}
+
+.center {
+    width: 10px;
+    height: 10px;
+    border: solid red 2px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.digital_clock-container {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.date {
+    text-transform: uppercase;
+    color: #aaa;
+    margin-top: 20px;
+}
+
+.date span {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    font-size: 0.8rem;
+}

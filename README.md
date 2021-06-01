@@ -39,3 +39,5 @@ DAY 16 : Drink Water
 DAY 17 : Movie App
 
 DAY 18 : Background Slider
+
+DAY 19 : Clock + Dark Mode
