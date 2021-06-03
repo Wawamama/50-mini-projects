@@ -47,3 +47,5 @@ DAY 20 : Button Ripple Effect
 DAY 21 : Drag and Drop
 
 DAY 22 : Drawing App
+
+DAY 23 : Kinetic Loader (triangles)
