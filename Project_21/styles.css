@@ -35,7 +35,8 @@ h1 {
 .box {
     width: 145px;
     height: 145px;
-    border: black 1px solid;
+    border-radius: 15px;
+    border: rgb(29, 6, 122) 2px solid;
     margin: 10px;
 }
 
@@ -48,8 +49,9 @@ h1 {
 }
 
 .fill {
-    height: 143px;
-    width: 143px;
+    border-radius: 13px;
+    height: 100%;
+    width: 100%;
     background: url('https://images.unsplash.com/photo-1561340928-b1504b04cf03?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
     background-position: center;
