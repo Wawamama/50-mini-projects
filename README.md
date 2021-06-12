@@ -49,3 +49,5 @@ DAY 21 : Drag and Drop
 DAY 22 : Drawing App
 
 DAY 23 : Kinetic Loader (triangles)
+
+DAY 24 : Content placeholder (loading effect on card)
