@@ -51,3 +51,5 @@ DAY 22 : Drawing App
 DAY 23 : Kinetic Loader (triangles)
 
 DAY 24 : Content placeholder (loading effect on card)
+
+DAY 25 : Sticky Nav Bar (changes color on scroll)
