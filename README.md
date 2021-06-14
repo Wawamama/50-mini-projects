@@ -55,3 +55,5 @@ DAY 24 : Content placeholder (loading effect on card)
 DAY 25 : Sticky Nav Bar (changes color on scroll)
 
 DAY 26 : Vertical Slider
+
+DAY 27 : Toast Notifications
