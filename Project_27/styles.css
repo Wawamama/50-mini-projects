@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:rebeccapurple;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.notif-btn, .notif {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.notif-btn {
+    color: rebeccapurple;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+ .notif-btn:focus {
+    outline: none;
+} 
+
+.notif-btn:active {
+    transform: scale(0.98);
+}
+
+
+#notif-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.notif.info {
+    color: rebeccapurple;
+}
+
+.notif.success {
+    color: green
+}
+
+.notif.error {
+    color: red;
+}
