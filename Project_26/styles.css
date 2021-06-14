@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    position: relative;
+}
+
+.left-slider {
+    width: 30vw;
+    height: 100vh;
+    transition: transform 0.5s linear;
+    transition: 0.5s linear;
+}
+
+.right-slider {
+    width: 70vw;
+    height: 100vh;
+    transition: 0.5s linear;
+}
+
+.left-slider > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-slider > div {
+    width: 70vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.buttons button {
+    padding: 20px;
+    color: #757474;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: #313131;
+}
+
+.down-btn {
+    position: absolute;
+    top: 45vh;
+    left: 30vw;
+    transform: translateY(50px) translateX(-50px);
+    border-radius: 5px 0 0 5px;
+}
+
+.up-btn {
+    position: absolute;
+    top: 45vh;
+    left: 30vw;
+    border-radius: 0 5px 5px 0;
+}
+
