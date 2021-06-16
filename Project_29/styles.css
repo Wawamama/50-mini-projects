@@ -40,7 +40,7 @@ small {
 }
 
 .image .fa-heart {
-    animation: grow 0.7s linear;
+    animation: grow 0.5s linear;
     position: absolute;
     transform: translate(-50%, -50%) scale(0);
 }
