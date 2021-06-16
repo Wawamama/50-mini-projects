@@ -1,3 +1,4 @@
 # What I learned with this project
 
-Scroll Animations <3
+EventListener('input')
+--> to update in real time on an input element (ex : number)
