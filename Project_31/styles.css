@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b3b98;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+form {
+    background-color: #23235b;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 2px rgba(222, 219, 250, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    max-width: 95%;
+}
+
+form > * {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0 20px 0;
+}
+
+.settings {
+    width: 100%;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    width: 100%;
+    color: white;
+    background-color: #3b3b98;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #2a2a8a;
+}
+
+.textfield-container {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    margin-bottom: 1rem;
+    min-height: 33px;
+}
+
+#length {
+    background-color: #3b3b98;
+    border: 0;
+    color: white;
+    padding: 2px 3px;
+}
+
+.textfield-container .clipboard {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 80%;
+    width: 1.7rem;
+    background-color:#3b3b98;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}
