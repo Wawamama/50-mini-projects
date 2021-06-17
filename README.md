@@ -64,4 +64,6 @@ DAY 29 : Double Heart Click
 
 DAY 30 : Auto Text Effect (cool)
 
-DAY 31 : Password Generator
+DAY 31 : Password 
+
+DAY 32 : Changing checkboxes
