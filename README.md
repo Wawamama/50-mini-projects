@@ -71,3 +71,5 @@ DAY 32 : Changing checkboxes
 DAY 33 : Notes App
 
 DAY 34 : Animated Countdown
+
+DAY 35 : Image Carousel
