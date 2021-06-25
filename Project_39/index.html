@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-359252c/tailwind.min.css" integrity="sha512-86Lp9pKSxz4IQNjDI53IJpyANmGud7XbTe3EMy4VPygIkycCo6kp91gNuTpy5RBeDtUCyrlP89GxmIemo4uZew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css ">
+    <title>DAY 39 - Password Strength Background Change</title>
+</head>
+<body>
+    <div class="background" id="background"></div>
+    <div id="form" class="bg-white text-black rounded p-10 shadow-md">
+        <h2 class="text-3xl text-center my-2">Image Password Strenght</h2>
+        <p class="text-sm text-gray-500 text-center">Change the password to see the effect</p>
+        <div class="my-4">
+            <label for="email" id='email' class="my-2 block">Email :</label>
+            <input type="text" class="p-2 border w-full rounded" placeholder="Enter email">
+        </div>
+        <div class="my-4">
+            <label for="password" class="my-2 block"> Password :</label>
+            <input type="password" id='password' class="p-2 border w-full rounded" placeholder="Enter Password">
+        </div>
+        <button class="bg-black text-white rounded w-full p-2 my-2" id="submit">Submit</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
