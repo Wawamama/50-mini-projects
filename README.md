@@ -79,3 +79,5 @@ DAY 36 : Hoverboard
 DAY 37 : Pokedex
 
 DAY 38 : Mobile Tab Navigation
+
+DAY 39 : Password Strength Background
