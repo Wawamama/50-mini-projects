@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-5a9c68d/tailwind.min.css" integrity="sha512-XgPcoW5S5ESFTO59Iy12VrhVngtzvQiLUKgp4JG3h1NVLPbdcNBNKELTswD/zDt4MEo98e7f16D/S07Arix11g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles.css ">
+    <title>DAY 41 - Verify Account UI</title>
+</head>
+<body>
+    <div class="container rounded-xl bg-white border-black border-2 p-6 shadow-lg">
+        <h1 class="text-2xl m-4 font-medium">Verify Your Account</h1>
+        <p class="text-gray-700">We emailed you a six digit code to bobby_bob@email.com<br>
+        Enter the code below to confirm your email address</p>
+        <div class="digit-container flex mx-2 my-10">
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+            <input type="number" min="0" max="9" placeholder="0" class="text-gray-500 text-6xl p-2 rounded border-gray-200" required>
+        </div>
+        <div class="bg-gray-200 text-gray-500 p-2 max-w-md m-auto rounded my-4">
+            <small>This is design only. We didn't actually send you an email as we don't have your email, right?</small>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
