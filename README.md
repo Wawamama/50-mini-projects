@@ -83,3 +83,5 @@ DAY 38 : Mobile Tab Navigation
 DAY 39 : Password Strength Background
 
 DAY 40 : 3D Background Boxes
+
+DAY 41 : Verify Account UI 
