@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fef9f2;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+.mood-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.mood {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.mood.active {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #000;
+    color:#fff;
+    padding: 1rem 1.5rem;
+    border:0;
+    margin-top:30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+small {
+    font-size: smaller;
+    margin-top:1rem
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+i.fas {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
