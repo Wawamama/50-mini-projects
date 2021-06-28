@@ -91,3 +91,5 @@ DAY 42 : Live User Filter
 DAY 43 : Feedback UI Design
 
 DAY 44 : Custom Range Slider
+
+DAY 45 : Netflix Style Navigation (Cool Side Nav Effect)
