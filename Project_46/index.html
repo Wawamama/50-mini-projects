@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    -->
+        <link rel="stylesheet" href="./styles.css ">
+    <title>DAY 46 - Poker Quizz App</title>
+</head>
+<body>
+    <h1 class="app-title">Poker Quizz App</h1>
+    <p>The questions of this quiz are from <a href="www.upswingpoker.com">Upswingpoker.com</a></p>
+    <h1 style="margin-top: 3rem; text-transform: capitalize;">Can you ace these 10 fundamental preflop decisions?</h1>
+    <div class="container">
+        <p>For each of these questions, imagine that you just sat at a new cash game table with a 100 big blind stack and no reads on your opponents. Keep in mind that all of the answers will be clear-cut with exactly one correct option (no mixed strategies).</p>
+
+    <div id="quiz-container" class="quiz-container">
+        <div class="quiz-content">
+            <h2 id="question" class="question"></h2>
+            <ul>
+                <li>
+                    <input type="radio" name='answer' class="answer" id='answer-a'>
+                    <label for="answer-a" id='answer-a_text'></label>
+                </li>
+                <li>
+                    <input type="radio" name='answer' class="answer" id='answer-b'>
+                    <label for="answer-b" id='answer-b_text'></label>
+                </li>
+                <li>
+                    <input type="radio" name='answer' class="answer" id='answer-c'>
+                    <label for="answer-c" id='answer-c_text'></label>
+                </li>
+            </ul>
+        </div>  
+        <button id='submit' class="submit">Submit</button>
+    </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
