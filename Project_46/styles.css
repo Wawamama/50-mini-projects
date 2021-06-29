@@ -40,6 +40,7 @@ a {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
     overflow: hidden;
     margin-top: 2rem;
+    background-color: #fff;
 }
 
 .quiz-content {
@@ -76,7 +77,7 @@ button {
     cursor: pointer;
 
 }
-.submit {
+.submit, .reload {
     display: block;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -93,10 +94,3 @@ button:hover {
     font-weight: bold;
 }
 
-button.reload {
-    width: 30%;
-    margin: 1.4rem auto;
-    border-radius: 3px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}

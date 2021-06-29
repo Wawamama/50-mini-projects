@@ -76,7 +76,7 @@ const questionEl = document.querySelector('#question')
 const answerA = document.querySelector('#answer-a_text')
 const answerB = document.querySelector('#answer-b_text')
 const answerC = document.querySelector('#answer-c_text')
-const quizContent = document.querySelector('.quiz-content')
+const quizContent = document.querySelector('.quiz-container')
 const checkboxes = document.querySelectorAll('.answer')
 
 let currentQuestion = 0
@@ -117,8 +117,21 @@ submit.addEventListener('click', () => {
         if(currentQuestion < quizData.length) {
             loadQuiz()
         } else {
+            let comment
+            if (score <=3) {
+                comment = 'Oopsie...'
+            } else if (score <=6) {
+                comment = 'Not so bad but you should practice!'
+            } else if (score <=8) {
+                comment = 'You\'re ok!'
+            } else if (score ==9) {
+                comment = 'Well done champion'
+            } else if (score == 10) {
+                comment = 'Perfect'
+            }
             quizContent.innerHTML = `
-                <h2 style='text-align: center;'>You answered correcty ${score}/${quizData.length} questions</h2>
+                <h2 style='text-align: center;>${comment}</h2>
+                <h3 style='text-align: center;'>You answered correcty ${score}/${quizData.length} questions</h3>
                 <button class='reload' onclick='location.reload()'>Reload Quiz</button>
             `
         }
