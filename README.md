@@ -97,3 +97,7 @@ DAY 45 : Netflix Style Navigation (Cool Side Nav Effect)
 DAY 46 : Quiz App (Poker Quiz)
 
 DAY 47 : Testimonial Box
+
+DAY 48 : Random Image Feed
+
+DAY 49 : To Do List
