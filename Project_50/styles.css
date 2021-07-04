@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #516dff;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+button {
+    border: solid 2px #fff;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.1s ease-in;
+}
+
+button a {
+    width: 100%;
+    height: 100%;
+    margin: 15px 20px;
+}
+
+.btn {
+    margin-top: 3rem;
+    padding: 15px;
+    background-color: #fff;
+    color:#516dff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+button:hover {
+    background-color: #fff;
+    color:#516dff;
+}
+
+
+button:focus {
+    outline: 0;
+}
+
+.insect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.insect-container > button {
+    height: 150px;
+    width: 150px;
+}
+
+
+.choose-insect {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choose-insect img {
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+#screen3 {
+    position: relative;
+}
+
+.time {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.score {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.game-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.game-container img {
+    height: 5rem;
+    width: 5rem;
+    animation: appear 0.2s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.3s ease-out;
+
+}
+
+.game-container img.disappear {
+    transform: scale(0);
+    transition: 0.3s ease-out;
+
+}
+
+.warning-message {
+    width: 100%;
+    padding: 2rem;
+    background-color: #000;
+    opacity: 0.5;
+    transform: translateY(-300vh);
+    transition: transform 0.8s ease-out;
+    line-height: 2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.warning-message.show {
+    transform: translateY(40vh);
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
