@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  min-height: 100vh;
+  color: #cefadf;
+  padding: 3vw 1vw 1vw 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #0df2c4;
+  background: linear-gradient(152deg, #0df2c4 0%, #055c4b 23%, #cffcf3 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: 'Zen Loop', cursive;
+  color: #cffcf3;
+  opacity: 0.8;
+  font-size: 3rem;
+  margin-top: -20px;
+  margin-bottom: 4rem;
+}
+
+.left-container {
+  width: 30%;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.left-container small {
+  color: #055c4b;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.left-container h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.left-container h2 {
+  font-size: 3rem;
+  margin-top: -1rem;
+}
+
+.left-container .info {
+  margin-top: 4rem;
+  text-align: justify;
+  line-height: 26px;
+  font-size: 0.9rem;
+}
+
+.left-container .info a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.left-container .github-btn {
+  background-color: transparent;
+  border: solid 1px #cffcf3;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  margin-top: 3rem;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-container .github-btn i {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.left-container .github-btn:hover {
+  background-color: #cffcf3;
+  color: #055c4b;
+}
+
+.left-container .github-btn:hover i {
+  color: #055c4b;
+}
+
+.projects-container {
+  border: 1px solid #055c4b;
+  width: 100%;
+  position: relative;
+}
+
+.projects-container .nav-container {
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #055c4b;
+  color: #0df2c4;
+  z-index: 100;
+}
+
+.projects-container .nav-container button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.projects-container .nav-container .see-all {
+  font-size: 0.7rem;
+}
+
+.projects-container .nav-container .arrow {
+  font-size: 1.2rem;
+}
+
+.day-container {
+  position: absolute;
+  bottom: 0;
+  left: -1.1rem;
+  z-index: 2;
+  color: #fff;
+}
+
+.day-container h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.day-container h2 {
+  font-size: 100px;
+}
+
+.day-container .day {
+  margin-top: -20px;
+}
+
+.slider-list {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-list .slider-container {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.slider-list .slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.slider-list .slide figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: 0;
+  background-position: top center;
+  background-color: transparent;
+  background-size: cover;
+  z-index: -1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  opacity: 0.8;
+}
+
+.slider-list .slide .slide_info {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #000;
+  background-color: rgba(13, 241, 197, 0.6);
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+.slider-list .slide .slide_info h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #055c4b;
+}
+
+.slider-list .slide .slide_btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border: 0;
+  padding: 1rem 1.7rem;
+  font-family: inherit;
+  letter-spacing: 0.2rem;
+  background-color: #0df2c4;
+  color: #055c4b;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slider-list .slide .slide_btn:focus {
+  outline: none;
+}
+
+.slider-list .slide .slide_btn:hover {
+  opacity: 0.9;
+  color: #000;
+  border: 1rem solid #055c4b;
+  border-radius: 45px;
+}
+
+.slide_btn:hover ~ figure {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
