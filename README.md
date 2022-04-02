@@ -1,19 +1,19 @@
 # 50-mini-projects - 2021
 
-### What is it?
+## What is it?
 
 These are my solutions to the Udemy Course [50 Projects In 50 Days - HTML, CSS & JavaScript](https://www.udemy.com/course/50-projects-50-days/) I took when learning the basics of front end development.
 I learned a lot with these projects and made an effort to code everything by myself before watching the videos.
 
-### Made with
+## Made with
 
 HTML, CSS, Vanilla Javascript
 
-### Website with all the projects
+## Website with all the projects
 
 http://neverwithoutchocolate.com/5050/
 
-### Details
+## Details
 
 #### Start: 05/10/21
 
