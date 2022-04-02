@@ -7,7 +7,7 @@ I learned a lot with these projects and made an effort to code everything by mys
 
 ### Made with
 
-[HTML], [CSS], [Vanilla Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+HTML, CSS, Vanilla Javascript
 
 ### Website with all the projects
 
